@@ -1,0 +1,89 @@
+.headImage{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1em;
+  height: 180px;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  background: lightgreen;
+  display: grid;
+  width: 100vw;
+  height: 100vh;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-areas:
+  "heady heady heady"
+  "navvy navvy navvy"
+  "aside1 mainy aside2"
+  "aside1 mainy aside2"
+  "aside1 mainy aside2"
+  "footy footy footy";
+}
+
+header {
+  grid-area: heady;
+  background: lightpink;
+}
+
+nav {
+  grid-area: navvy;
+  background: lightsalmon;
+}
+
+main {
+  grid-area: mainy;
+  background: lightseagreen;
+  max-height: 100%;
+}
+
+#aside1 {
+  grid-area: aside1;
+  background: lightskyblue;
+}
+
+#aside2 {
+  grid-area: aside2;
+  background: lightsteelblue;
+}
+
+footer {
+  grid-area: footy;
+  background: lightyellow;
+}
+
+nav ul {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+}
+
+nav ul li {
+  list-style: none;
+}
+@media screen and (min-width: 641px) and (max-width: 900px) {
+  .container {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "heady heady" "navvy navvy" "mainy mainy" "aside1 aside2" "footy footy";
+  }
+}
+@media screen and (max-width: 640px) {
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-areas: "heady" "mainy" "aside1" "aside2" "navvy" "footy";
+  }
+
+  nav ul {
+    flex-flow: column nowrap;
+    text-align: center;
+  }
+
+  nav ul li a {
+    display: block;
+    padding: 10px 5px;
+    margin: 5px;
+    border: 1px black solid;
+    background: white;
+  }
+}

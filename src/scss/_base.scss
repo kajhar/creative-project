@@ -1,0 +1,12 @@
+body {
+  background: $bg;
+}
+h1 {
+  color: $header;
+  font-size: 4em;
+  padding: $padding;
+  text-align: center;
+} //end h1
+section,aside{
+  padding: $padding;
+}

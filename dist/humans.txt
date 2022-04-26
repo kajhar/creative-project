@@ -1,0 +1,13 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+    Kaj Harvey -- Developer
+    
+
+# THANKS
+    David Schaal
+
+# SITE
+    CSS3, HTML5
+    jQuery, Modernizr, Normalize.css
