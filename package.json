@@ -1,5 +1,5 @@
 {
-  "name": "kaj-custom-boiler",
+  "name": "creative-project",
   "version": "1.0.0",
   "description": "custom boilerplate for html5 webpack dart-sass",
   "main": "index.js",
@@ -8,7 +8,7 @@
     "test": "test"
   },
   "scripts": {
-    "build": "./node_modules/.bin/webpack -w"
+    "build": "webpack -w"
   },
   "keywords": [
     "html5",
@@ -27,5 +27,13 @@
   },
   "dependencies": {
     "tone": "^14.7.77"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kajhar/creative-project.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kajhar/creative-project/issues"
+  },
+  "homepage": "https://github.com/kajhar/creative-project#readme"
 }
